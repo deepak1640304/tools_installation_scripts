@@ -16,3 +16,12 @@ gpgcheck=0
 enabled=1
 $ sudo yum -y update
 $ sudo yum -y install trivy
+
+$ sudo tee /etc/yum.repos.d/trivy.repo << 'EOF'
+[trivy]
+name=Trivy repository
+baseurl=https://aquasecurity.github.io/trivy-repo/rpm/releases/$basearch/
+gpgcheck=1
+enabled=1
+gpgkey=https://aquasecurity.github.io/trivy-repo/rpm/public.key
+EOF
