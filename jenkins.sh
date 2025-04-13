@@ -47,4 +47,10 @@ sudo systemctl status jenkins
 sudo firewall-cmd --permanent --zone=public --add-port=8080/tcp
 sudo firewall-cmd --reload
 
+http://localhost:8080
+sudo cat /var/lib/jenkins/secrets/initialAdminPassword
+
+https://phoenixnap.com/kb/how-to-install-jenkins-on-centos-8
+
+
 
